@@ -10,7 +10,9 @@
     const root = document.getElementById("root");
     const h3 = React.createElement(
         "h3",
-        null,
+        {
+            onMouseEnter: () => console.log("mouse enter"),
+        },
         "This is span"
     );
     const btn = React.createElement(
